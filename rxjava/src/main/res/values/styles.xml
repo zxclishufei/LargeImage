@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/black3</item>
+        <item name="colorPrimaryDark">@color/black2</item>
+        <item name="colorAccent">@color/black1</item>
+    </style>
+    <!-- <style name="AppTheme" parent="AppBaseTheme" />-->
+    <style name="AppBaseTheme" parent="android:Theme.Light"/>
+
+</resources>

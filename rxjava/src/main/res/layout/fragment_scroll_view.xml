@@ -1,0 +1,42 @@
+<com.canyinghao.canrefresh.CanRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:can_friction="1.0"
+    app:can_style_down="lower"
+    app:can_style_up="mid"
+    app:can_bg_up="@color/google_red"
+    app:can_bg_down="@color/google_green">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@id/can_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ScrollView"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.canyinghao.canrefresh.classic.ClassicRefreshView
+        android:id="@id/can_refresh_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.canyinghao.canrefresh.classic.ClassicRefreshView
+        android:id="@id/can_refresh_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</com.canyinghao.canrefresh.CanRefreshLayout>

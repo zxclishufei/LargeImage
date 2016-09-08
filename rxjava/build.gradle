@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+
+    defaultConfig {
+        applicationId "com.sf.rxjava"
+        minSdkVersion 11
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.liulishuo.filedownloader:library:0.3.4'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+    compile 'com.j256.ormlite:ormlite-core:4.48'
+    compile 'com.canyinghao:canadapter:1.0.5'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.canyinghao:canrecyclerview:1.0.2'
+    compile 'com.canyinghao:canrefresh:1.0.4'
+}
